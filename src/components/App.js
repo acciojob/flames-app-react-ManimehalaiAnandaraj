@@ -56,19 +56,25 @@ const App = () => {
 
   return (
     <div>
-        <h3>Calculate Relationship</h3>
+      <h3>Calculate Relationship</h3>
       <input
         data-testid="input1"
         name="name1"
         value={name1}
-        onChange={(e) => setName1(e.target.value)}
+        onChange={(e) => {
+          setName1(e.target.value);
+          setResult(''); // Clear result when typing
+        }}
         placeholder="Enter first name"
       />
       <input
         data-testid="input2"
         name="name2"
         value={name2}
-        onChange={(e) => setName2(e.target.value)}
+        onChange={(e) => {
+          setName2(e.target.value);
+          setResult(''); // Clear result when typing
+        }}
         placeholder="Enter second name"
       />
       <button
@@ -76,7 +82,7 @@ const App = () => {
         name="calculate_relationship"
         onClick={calculateRelationship}
       >
-       Calculate Relationship Future
+        Calculate Relationship Future
       </button>
       <button
         data-testid="clear"
@@ -85,13 +91,7 @@ const App = () => {
       >
         Clear
       </button>
-      <h3>
-        
-         {result && 
-      <h3 data-testid="answer"> {result} </h3>}
-
-      </h3>
-        
+      {result && <h3 data-testid="answer">{result}</h3>}
     </div>
   );
 };
