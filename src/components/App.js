@@ -85,9 +85,11 @@ const App = () => {
       >
         Clear
       </button>
-      
-      {result && 
+      <h3>
+         {result && 
       <h3 data-testid="answer"> {result} </h3>}
+      </h3>
+     
     </div>
   );
 };
