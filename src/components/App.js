@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div>
-        <h1>Calculate Relationship</h1>
+        <h3>Calculate Relationship</h3>
       <input
         data-testid="input1"
         name="name1"
@@ -86,7 +86,8 @@ const App = () => {
         Clear
       </button>
       
-      {result && <h3 data-testid="answer">{result}</h3>}
+      {result && 
+      <h3 data-testid="answer"> {result} </h3>}
     </div>
   );
 };
