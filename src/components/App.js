@@ -63,7 +63,7 @@ const App = () => {
         value={name1}
         onChange={(e) => {
           setName1(e.target.value);
-          setResult(''); // Clear result when typing
+          setResult(''); 
         }}
         placeholder="Enter first name"
       />
@@ -93,7 +93,9 @@ const App = () => {
       >
         Clear
       </button>
+      
       {result && <h3 data-testid="answer">{result}</h3>}
+    
     </div>
   );
 };
