@@ -86,10 +86,12 @@ const App = () => {
         Clear
       </button>
       <h3>
+        
          {result && 
       <h3 data-testid="answer"> {result} </h3>}
+
       </h3>
-     
+        
     </div>
   );
 };
