@@ -78,6 +78,7 @@ const App = () => {
         placeholder="Enter second name"
       />
       <button
+       style={{color:"blue"}}
         data-testid="calculate_relationship"
         name="calculate_relationship"
         onClick={calculateRelationship}
@@ -85,6 +86,7 @@ const App = () => {
         Calculate Relationship Future
       </button>
       <button
+      style={{color:"blue"}}
         data-testid="clear"
         name="clear"
         onClick={handleClear}
