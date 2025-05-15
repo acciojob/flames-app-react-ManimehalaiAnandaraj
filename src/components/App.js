@@ -56,6 +56,7 @@ const App = () => {
 
   return (
     <div>
+        <h3>Calculate Relationship</h3>
       <input
         data-testid="input1"
         name="name1"
@@ -75,7 +76,7 @@ const App = () => {
         name="calculate_relationship"
         onClick={calculateRelationship}
       >
-        Calculate Relationship
+       Calculate Relationship
       </button>
       <button
         data-testid="clear"
