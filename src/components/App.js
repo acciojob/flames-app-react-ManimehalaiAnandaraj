@@ -94,7 +94,7 @@ const App = () => {
         Clear
       </button>
       
-      {result && <h3 data-testid="answer">{result}</h3>}
+      {result && <h3 data-testid="result">{result}</h3>}
     
     </div>
   );
